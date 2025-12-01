@@ -171,7 +171,7 @@
 
       /* Visualization section */
       .visualization-section {
-        flex: 1.2;
+        flex: 0.9;
         min-width: 0;
         display: flex;
         flex-direction: column;
@@ -209,9 +209,11 @@
         gap: 20px;
         flex-wrap: wrap;
         padding: 12px 14px;
-        background: var(--bg-panel);
+        background: transparent;
         border-radius: var(--radius-sm);
         border: 1px solid var(--border);
+        border-top: 1px solid var(--border);
+        margin-top: 8px;
         font-size: 11px;
       }
 
@@ -367,38 +369,6 @@
           <div class="visualization-container">
             <canvas id="atomCanvas" width="1000" height="750"></canvas>
           </div>
-
-          <div class="legend">
-            <div class="legend-item">
-              <div
-                class="legend-color"
-                style="background: #ef4444; color: #ef4444"
-              ></div>
-              <span>Protons</span>
-            </div>
-            <div class="legend-item">
-              <div
-                class="legend-color"
-                style="background: #3b82f6; color: #3b82f6"
-              ></div>
-              <span>Neutrons</span>
-            </div>
-            <div class="legend-item">
-              <div
-                class="legend-color"
-                style="background: #06b6d4; color: #06b6d4"
-              ></div>
-              <span>s-orbital</span>
-            </div>
-            <div class="legend-item">
-              <div
-                class="legend-color"
-                style="background: #8b5cf6; color: #8b5cf6"
-              ></div>
-              <span>p-orbital</span>
-            </div>
-            <div class="legend-item"></div>
-          </div>
         </div>
 
         <!-- Right: Information -->
@@ -411,6 +381,37 @@
             <div class="electron-config" id="electronConfig">1s¹</div>
             <div class="mass-number" id="massNumber">Mass Number: 1</div>
             <div class="isotope-label" id="isotopeLabel"></div>
+
+            <div class="legend">
+              <div class="legend-item">
+                <div
+                  class="legend-color"
+                  style="background: #ef4444; color: #ef4444"
+                ></div>
+                <span>Protons</span>
+              </div>
+              <div class="legend-item">
+                <div
+                  class="legend-color"
+                  style="background: #3b82f6; color: #3b82f6"
+                ></div>
+                <span>Neutrons</span>
+              </div>
+              <div class="legend-item">
+                <div
+                  class="legend-color"
+                  style="background: #06b6d4; color: #06b6d4"
+                ></div>
+                <span>s-orbital</span>
+              </div>
+              <div class="legend-item">
+                <div
+                  class="legend-color"
+                  style="background: #8b5cf6; color: #8b5cf6"
+                ></div>
+                <span>p-orbital</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
